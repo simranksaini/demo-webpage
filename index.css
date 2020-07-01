@@ -1,0 +1,101 @@
+.header {
+    position: fixed;
+    
+    padding: 8px 8px 32px 8px;
+    background: #000000;
+    top: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.header:after {
+    background: linear-gradient(-45deg, #ffffff 10px, transparent 0),
+    linear-gradient(45deg, #ffffff 10px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 12px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+/* .center{
+    padding-top: 100px;
+    padding-bottom: 100px;
+} */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding: 8px 8px 32px 8px;
+    background: #343A40;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.footer>p{
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer:before {
+    background: linear-gradient(-45deg, transparent 10px, #ffffff 0),
+    linear-gradient(45deg, transparent 10px, #ffffff 0);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 12px 32px;
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 16px;
+}
+.bg-light {
+    background-color: black !important;
+}
+.navbar-light .navbar-brand {
+    color: white !important;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #FFC200 !important;
+    border-color: #FFC200 !important;
+            color: black !important;
+
+}
+
+.btn-primary:hover{
+background-color: rgba(238, 238, 238, 0.7) !important;
+color: black !important;
+transition: ease-in 0.3s !important;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    padding: 0.8rem 1rem;
+
+}
+.navbar-custom .nav-item{
+        margin: 10px !important;
+        font-size: smaller;
+}
+
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #000000 !important;
+    background-color: #FFC200;
+    border-radius: 10px;
+}
